@@ -1,0 +1,147 @@
+/** @format */
+
+@font-face {
+  font-family: "Yekan";
+  src: url("Yekan.woff") format("woff");
+}
+
+* {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Yekan", sans-serif;
+  direction: rtl;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+div {
+  padding: 5px 10px;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 1000;
+}
+.navbar-h1 {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 1000;
+}
+h2 {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+p {
+  padding: 0 15px;
+  text-align: justify;
+  font-size: 0.5em;
+}
+
+ul {
+  text-align: justify;
+}
+
+li {
+  list-style: arabic-indic;
+  margin: 0 25px;
+  font-size: 0.5em;
+}
+.mozo {
+  display: flex;
+  justify-content: center;
+}
+
+b {
+  font-weight: bold;
+}
+.m-list {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+}
+.m1 {
+  display: flex;
+}
+.m2 {
+  display: flex;
+}
+.all-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px 5px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .mozo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .m1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .m2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .m2-img {
+    display: none;
+  }
+  .m-list {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .m2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .m-list {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+  .m2-img {
+    width: 100%;
+  }
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.soal {
+  border: 1px solid black;
+}
