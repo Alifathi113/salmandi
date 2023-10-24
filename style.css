@@ -14,10 +14,17 @@
 body {
   font-family: "Yekan", sans-serif;
   direction: rtl;
-  line-height: 1.5;
+  line-height: 1.7;
   font-size: 30px;
+  background-color: #f0f1f4;
 }
-
+article {
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  margin: 30px 100px;
+  border-radius: 10px;
+}
 div {
   padding: 5px 10px;
 }
@@ -25,6 +32,7 @@ div {
 h1 {
   font-size: 1em;
   font-weight: 1000;
+  color: #364163;
 }
 .navbar-h1 {
   color: white;
@@ -34,6 +42,7 @@ h1 {
 h2 {
   font-size: 0.9em;
   font-weight: 600;
+  color: #2533cc;
 }
 
 h3 {
@@ -66,7 +75,7 @@ b {
 }
 .m-list {
   margin-top: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #364163;
   background-color: #f5f5f5;
   white-space: nowrap;
   display: flex;
@@ -81,17 +90,33 @@ b {
 .all-box {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px 90px;
 }
 .box {
-  border: 1px solid black;
-  margin: 5px;
-  padding: 10px 5px;
+  margin: 10px auto;
+  padding: 5px 5px;
   width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 10px;
 }
-@media (max-width: 768px) {
+.nav-box-list {
+  background-color: #fff;
+  padding: 5px 10px;
+  margin: -25px 100px 30px 100px;
+  border-radius: 10px;
+}
+.nav-ul {
+  display: flex;
+  justify-content: center;
+}
+.nav-li {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #2533cc;
+  list-style: none;
+  height: 40px;
+}
+
+@media (max-width: 700px) {
   .mozo {
     display: flex;
     justify-content: center;
@@ -111,8 +136,23 @@ b {
   .m-list {
     width: 100%;
   }
+  .all-box {
+    padding: 10px 20px;
+  }
   .box {
     width: 100%;
+  }
+  article {
+    margin: 20px 25px;
+  }
+  .nav-box-list {
+    margin: -25px 100px 30px 100px;
+  }
+  .nav-li {
+    padding: 0;
+    margin: 0 10px;
+    font-size: 0.5em;
+    font-weight: 300;
   }
 }
 @media (max-width: 1000px) {
@@ -129,11 +169,18 @@ b {
   .m2-img {
     width: 100%;
   }
+  article {
+    margin: 20px 50px;
+  }
+  .nav-box-list {
+    margin: 30px 50px;
+    padding: auto;
+  }
 }
 .navbar {
   width: 100%;
-  height: 60px;
-  background-color: black;
+  height: 250px;
+  background-color: #364163;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -144,4 +191,16 @@ a {
 }
 .soal {
   border: 1px solid black;
+}
+a:hover {
+  color: #2533cc;
+}
+.h-box {
+  font-size: 0.7em;
+  padding: 10px;
+  margin: 0;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #364163;
 }
